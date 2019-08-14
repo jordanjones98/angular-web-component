@@ -15,5 +15,11 @@
       content="This is an example of what will some day be a custom MyUW Card."
     >
     </myuw-card>
+    <script>
+      const el = document.querySelector('myuw-card');
+      el.addEventListener('deleteCardNotify', e => {
+        console.log("Someone delete me!");
+      });
+    </script>
   </body>
 </html>

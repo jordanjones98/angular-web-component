@@ -16,4 +16,10 @@ export class NgCardElementComponent {
   @Input() title: string;
   @Input() description: string;
   @Input() content: string;
+
+  @Output() deleteCardNotify = new EventEmitter<boolean>();
+
+  handleCardDelete() {
+    this.deleteCardNotify.emit(true);
+  }
 }
