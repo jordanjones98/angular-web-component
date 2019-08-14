@@ -15,4 +15,5 @@ import {
 export class NgCardElementComponent {
   @Input() title: string;
   @Input() description: string;
+  @Input() content: string;
 }

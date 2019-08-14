@@ -8,6 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { NgCardElementComponent } from './ng-card-element/ng-card-element.component';
 
@@ -19,7 +20,8 @@ import { NgCardElementComponent } from './ng-card-element/ng-card-element.compon
     MatButtonModule,
     MatMenuModule,
     MatIconModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatToolbarModule
   ],
   declarations: [NgCardElementComponent],
   entryComponents: [NgCardElementComponent] // use entryComponents array instaed of bootstrap because it will be added dynamically.
